@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <title>MyProfile</title>
+        <meta charset="UTF-8">
+        <meta name="author" author="JORDAN CHAKI">
+        <meta name="description" content="JORDAN CHAKI A dedicated youth who's primary Goal is the provision of quality and voguish professional digital services">
+        <meta name="copyright" content="JORDANCHAKI" >
+        <meta name="keywords" content="JORDANCHAKI">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="topnav">
+           <a href="contact.html">CONTACT</a>
+           <a href="JordanResume.pdf">RESUME</a>
+           <a href="login.html">COURSES</a>
+           <a href="register.html">REGISTER</a>
+           <a href="aboutme.html">ABOUT ME</a>
+           <a href="index.html" class="active">HOME</a>
+           <div class="profile">
+           </div>
+        </div>
+        <p style="margin-top: 50px; color: orange; text-align: center;">ENROLL A COURSE</p>
+        <form name="acourse" action="course.php"  onsubmit="return validateForm()" method="POST" style="width:500px ; margin:auto">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Course Name</label>
+                        <select class="form-control" name="course" required>
+                            <option disabled>select Course</option>
+                            <option >Web Programming</option>
+                            <option >Java Programming</option>
+                            <option >Computer Networking</option>
+                            <option > Computer Hardware &amp; Maintainance</option>
+                            <option >Business Communications</option>
+                            <option >Discrete Structures</option>
+                            <option >Development Studies II</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Course ID</label>
+                        <select class="form-control"  name="courseID" required>
+                            <option disabled>Select Course ID</option>
+                            <option >IS 181</option>
+                            <option >CS 175</option>
+                            <option >IS 171</option>
+                            <option >IS 158</option>
+                            <option >B 106</option>
+                            <option >IS 143</option>
+                            <option >DS 113</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Brief Course Description</label>
+                        <input type="text" name="description" id="description" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="col">
+                        <label>Offering Department</label>
+                        <input type="text" name="department" id="department" class="form-control" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Academic Year</label>
+                        <select class="form-control" name="academic_year">
+                            <option disabled>Academic year</option>
+                            <option>1<sup>st</sup>Year</option>
+                            <option>2<sup>nd</sup>Year</option>
+                            <option>3<sup>rd</sup>Year</option>
+                            <option>4<sup>th</sup>Year</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Course Instructor</label>
+                        <input type="text" name="course_instructor" id="course_instructor" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="col">
+                        <label>Grade</label>
+                        <select class="form-control" name="grade">
+                            <option disabled>Grade</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                            <option>F</option>
+                        </select>
+                        
+                    </div>
+
+                </div>
+            </div>
+           
+            
+
+            <!--test-->
+            <div  style="text-align: center;padding:10px;">
+                <button type="submit"   class="btn btn-outline-primary">Enroll Course</button>
+                </div>
+              
+            
+        </form>
+        </div>
+        <div class="footer">
+            
+            <hr class="line">
+            Created by: JORDAN CHAKI || With help from friends😉
+            <hr class="line">
+        </div>
+        <script src="password.js"></script>
+        <script src="validator1.js"></script>
+        <script>
+            function validateForm() {
+    var a = document.forms["acourse"]["cname"].value;
+    if (a == "") {
+      alert("Username required.");
+      uname.focus();
+      return false;
+    }
+  var b = document.forms["login"]["password"].value;
+  if (b ==""){
+      alert("Password required.");
+      password.focus();
+      return false;
+  }
+}
+        </script>
+    </body>
+    </html>   
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+<?php
+    $connection = mysqli_connect("localhost", "root", "", "user");
+
+    if ($connection === false) {
+        die("ERROR: Could not connect" .mysqli_connect_error());
+    }
+
+    $courseName = $_POST['courseName'];
+    $courseCode = $_POST['courseCode'];
+    $description = $_POST['description'];
+    $department = $_POST['department'];
+    $sem = $_POST['sem'];
+    $year = $_POST['year'];
+    $initials = $_POST['initials'];
+    $instructor = $_POST['instructor'];
+    $grades = $_POST['grades'];
+
+    $sql = "INSERT INTO courses (courseName, courseCode, description, department, sem, year, initials, instructor, grades) VALUES ('$courseName', '$courseCode', '$description', '$department', '$sem', '$year', '$initials', '$instructor', '$grades')";
+    
+    if(mysqli_query($connection, $sql)) {
+        echo "Records inserted successfully";
+    } else {
+        echo "ERROR: Could not execute entry" .mysqli_error($connection);
+    }
+
+    mysqli_close($connection);
+?>

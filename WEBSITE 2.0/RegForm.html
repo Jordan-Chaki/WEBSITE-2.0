@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<title>RegForm</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="validator.js"></script>
+<link rel="stylesheet" href="main.css">
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</head>
+
+<body>
+	<div class="topnav">
+		<a href="contact.html">CONTACT</a>
+		<a href="JordanResume.pdf">RESUME</a>
+		<a href="login.html">COURSES</a>
+		<a href="register.html">REGISTER</a>
+		<a href="aboutme.html">ABOUT ME</a>
+		<a href="index.html" class="active">HOME</a>
+		<div class="profile">
+		
+		</div>
+	</div>
+	<div >
+	<p style="text-align: center; color: orange;">AQUIRE MY SERVICES</p>
+	</div>
+	<form name="RegForm" action=""  onsubmit="return validateForm()" method="post" style="width:500px ; margin:auto ; background-color: black; color: orange;" >
+		<div class="hireform">
+		<div class="form-group">
+							  <label for="fname">Name</label>
+		<input type="text" name="fname" id="fname" class="form-control" placeholder="JORDAN CHAKI"> 
+							  </div>															
+		<div class="form-group">
+							   <label for="jobpost">Job Position</label>
+		<input type="text" name="jobpost" id="jobpost" class="form-control" placeholder="CHIEF OFFICER">
+							   </div>
+		<div class="form-group">
+							   <label for="Email">Email</label>
+		<input type="email" name="email" id="email" class="form-control" placeholder="jordan.cjosephat@gmail.com">
+							   
+							   </div>
+		<div class="form-group">
+							   <label for="telno">Phone Contact</label>
+		<input type="tel" name="telno" id="telno" class="form-control"  placeholder="255620737211">
+							   </div>
+		<div class="form-group">
+							  <label for="Linkedac">Linkedin Account</label>
+		<input type="text" name="Linkac" id="Linkac" class="form-control"> 
+							   </div>
+		<div class="form-group">
+							   <label for="password">Password</label>
+		<input type="password" name="password" id="password" class="form-control">
+							   </div>
+		<div class="form-group">
+							   <label for="cpassword"> Confirm Password</label>
+		<input type="password" name="cpassword" id="cpassword" class="form-control">
+							   </div>
+							   <!--password validation starts-->
+							   <div id="message">
+								<p>password should contain</p>
+								<p id="letter" class="invalid"><strong>lowercase</strong> letter</p>
+								<p id="capital" class="invalid"><strong>capital(uppercase)</strong> letter</p>
+								<p id="number" class="invalid"><strong>numerals</b></strong>
+								<p id="length" class="invalid"><strong>10 characters +</strong></p>
+							  </div>
+							 <!--password validation ends-->
+		<div class="form-group">
+							  <label for="gender">Gender</label>
+		<select name="gender" id="gender" class="form-control">
+		<option value=""> </option>
+	    <option value="male">Male</option>
+		<option value="female">Female</option>
+		</select>
+							   </div>
+		<div class="form-group"	>
+			<label for="description">Briefly describe the work to be executed</label>
+			<textarea class="form-control" name="textarea"  id="exampleFormControlTextarea1" rows="5"></textarea>
+			
+		</div>				   					  
+		<div style="text-align: center;margin-bottom: 150px;">
+		<button type="submit"   class="btn btn-outline-primary" >Submit</button>
+		</div>
+	</div>
+
+											
+		
+		
+	</form>
+	<div class="footer">
+            
+		<hr class="line">
+		Created by: JORDAN CHAKI || With help from friends😉
+		<hr class="line">
+	</div>
+	<script src="password.js"></script>
+	<script src="validator.js"></script>
+</body>
+</html>

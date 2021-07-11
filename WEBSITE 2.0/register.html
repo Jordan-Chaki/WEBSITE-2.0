@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <title>MyProfile</title>
+        <meta charset="UTF-8">
+        <meta name="author" author="JORDAN CHAKI">
+        <meta name="description" content="JORDAN CHAKI A dedicated youth who's primary Goal is the provision of quality and voguish professional digital services">
+        <meta name="copyright" content="JORDANCHAKI" >
+        <meta name="keywords" content="JORDANCHAKI">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="validator1.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+           <a href="contact.html">CONTACT</a>
+           <a href="JordanResume.pdf">RESUME</a>
+           <a href="login.html">COURSES</a>
+           <a href="register.html">REGISTER</a>
+           <a href="aboutme.html">ABOUT ME</a>
+           <a href="index.html" class="active">HOME</a>
+           <div class="profile">
+            
+           </div>
+        </div>
+          <div class="design">
+                <div>
+                    <p style="font-weight:0; text-align: center; padding:5px;color: orange;background-color: black;">REGISTER</p>
+                </div>
+        <form name="register" action="register.php"  onsubmit="return validateForm()" method="POST" style="width:500px ; margin:auto ;background-color: black;color: orange; " enctype="multipart/form-data">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>First Name</label>
+                        <input type="text" name="fname" id="fname" class="form-control" placeholder="JORDAN">
+                    </div>
+                    <div class="col">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" id="lname" class="form-control" placeholder="CHAKI">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Middle Name</label>
+                        <input type="text" name="mname" id="mname" class="form-control" placeholder="JOSEPHAT">
+                    </div>
+                    <div class="col">
+                        <label>Username</label>
+                        <input type="text" name="uname" id="uname" class="form-control" placeholder="PIED PIPER">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="jordanchaki@gmail.com">
+                    </div>
+                    <div class="col">
+                        <label>Resume/Cv</label>
+                        <input type="file" name ="resume" id="resume" class="form-control" placeholder="attach Cv">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="">
+                        <small class="form-text text-muted">Include letters &amp; numbers. Less than 10 characters not accepted.</small>
+                    </div>
+                    <div class="col">
+                        <label>Confirm Password</label>
+                        <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="">
+                    </div>
+                </div>
+            </div>
+                            <!--password validation starts-->
+                            <div id="message">
+                                <p>password should contain</p>
+                                <p id="letter" class="invalid"><strong>lowercase</strong> letter</p>
+                                <p id="capital" class="invalid"><strong>capital(uppercase)</strong> letter</p>
+                                <p id="number" class="invalid"><strong>numerals</b></strong>
+                                <p id="length" class="invalid"><strong>10 characters +</strong></p>
+                              </div>
+                             <!--password validation ends-->
+           
+            <!--test-->
+
+            <!--test-->
+            <div  style="text-align: center;padding:10px;">
+                <button type="submit"   class="btn btn-outline-primary">Submit</button>
+                </div>
+              
+            
+        </form>
+        </div>
+        <div class="footer">
+            
+            <hr class="line">
+            Created by: JORDAN CHAKI || With help from friends😉
+            <hr class="line">
+        </div>
+        <script src="password.js"></script>
+        <script src="validator1.js"></script>
+    </body>
+    </html>   
